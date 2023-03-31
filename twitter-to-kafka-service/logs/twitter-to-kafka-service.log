@@ -1,0 +1,30 @@
+2023-03-22 13:08:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.17 on DESKTOP-JJNK2Q2 with PID 14260 (C:\Spring Boot projects\microservices-demo\twitter-to-kafka-service\target\classes started by Daiana in C:\Spring Boot projects\microservices-demo)
+2023-03-22 13:08:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-22 13:08:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.954 seconds (JVM running for 1.906)
+2023-03-22 13:08:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-03-22 13:08:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-22 13:08:03 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-22 13:08:03 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:24)
+Caused by: java.lang.NullPointerException: null
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.callDoSomething(MockKafkaStreamRunner.java:73)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:39)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2023-03-22 14:26:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.17 on DESKTOP-JJNK2Q2 with PID 14952 (C:\Spring Boot projects\microservices-demo\twitter-to-kafka-service\target\classes started by Daiana in C:\Spring Boot projects\microservices-demo)
+2023-03-22 14:26:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-22 14:26:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.742 seconds (JVM running for 1.481)
+2023-03-22 14:26:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-03-22 14:26:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-22 14:26:14 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering mock streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-22 14:26:14 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet magna massa magna Fusce dolor consectetuer Maecenas Kafka consectetuer posuere ipsum adipiscing amet malesuada dolor
+2023-03-22 14:26:24 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce Lorem ipsum Fusce purus pulvinar Fusce Java purus consectetuer pulvinar Maecenas pulvinar ipsum
+2023-03-22 14:26:34 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce pulvinar sed amet massa ipsum magna Elasticsearch malesuada sed massa congue congue congue
