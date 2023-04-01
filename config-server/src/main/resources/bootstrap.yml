@@ -8,10 +8,10 @@ spring:
           uri: https://github.com/software-dev2010/spring-cloud-config-server-repository
           default-label: master
           username: software-dev2010
-          password: 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
+          password:
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: pwd12345!
+      password: '{cipher}c0d85293cb01a46b3b629a12e5620f4e9d00d4ede8bdf248cf5b83e23f4536501e4b34a8d56b7a34fcee17aa01d05330'
