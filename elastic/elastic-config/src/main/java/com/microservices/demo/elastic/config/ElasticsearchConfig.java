@@ -18,7 +18,7 @@ import java.util.Objects;
 
 @Configuration
 @RequiredArgsConstructor
-@EnableElasticsearchRepositories(basePackages = "com.microservices.demo.elastic.index.client.reoository")
+@EnableElasticsearchRepositories(basePackages = "com.microservices.demo.elastic.index.client.repository")
 public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
 
     private final ElasticConfigData elasticConfigData;

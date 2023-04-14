@@ -5,13 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.microservices.demo</groupId>
-        <artifactId>elastic</artifactId>
+        <artifactId>microservices-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>elastic-config</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>elastic-index-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.microservices.demo</groupId>
             <artifactId>app-config-data</artifactId>

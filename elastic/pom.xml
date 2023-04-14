@@ -10,11 +10,5 @@
     </parent>
 
     <artifactId>elastic</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>elastic-config</module>
-        <module>elastic-model</module>
-        <module>elastic-index-client</module>
-    </modules>
 
 </project>
