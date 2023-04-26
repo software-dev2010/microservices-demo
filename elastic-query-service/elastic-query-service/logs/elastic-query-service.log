@@ -1,0 +1,174 @@
+2023-04-25 15:53:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-04-25 15:53:22 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-04-25 15:53:22 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-04-25 15:53:24 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=58da104c4fb2318451be3f6645aca22035584a49, state=null
+2023-04-25 15:53:24 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=58da104c4fb2318451be3f6645aca22035584a49, state=null
+2023-04-25 15:53:24 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client-elastic_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client.yml'}]
+2023-04-25 15:53:24 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client-elastic_query.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client.yml'}]
+2023-04-25 15:53:24 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following profiles are active: elastic_query
+2023-04-25 15:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-25 15:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-25 15:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 2 Elasticsearch repository interfaces.
+2023-04-25 15:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 2 Elasticsearch repository interfaces.
+2023-04-25 15:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-25 15:53:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-25 15:53:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-25 15:53:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-25 15:53:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=117491f3-0509-3d86-bec2-94ad8452d586
+2023-04-25 15:53:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=117491f3-0509-3d86-bec2-94ad8452d586
+2023-04-25 15:53:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-25 15:53:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-25 15:53:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-25 15:53:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-25 15:53:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-04-25 15:53:25 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-25 15:53:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1086 ms
+2023-04-25 15:53:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1086 ms
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:25 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-25 15:53:26 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.2
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.2
+2023-04-25 15:53:26 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.13.2
+2023-04-25 15:53:26 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.13.2
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.2
+2023-04-25 15:53:26 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.2
+2023-04-25 15:53:26 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:53:26 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:53:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@359865a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6dcbbb49, org.springframework.security.web.header.HeaderWriterFilter@2dbf2da, org.springframework.security.web.authentication.logout.LogoutFilter@71b3ba5a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7645b7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36c783ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69069866, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d9bb69b, org.springframework.security.web.session.SessionManagementFilter@503a7990, org.springframework.security.web.access.ExceptionTranslationFilter@6996bbc4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@797f97e3]
+2023-04-25 15:53:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@359865a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6dcbbb49, org.springframework.security.web.header.HeaderWriterFilter@2dbf2da, org.springframework.security.web.authentication.logout.LogoutFilter@71b3ba5a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7645b7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36c783ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69069866, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d9bb69b, org.springframework.security.web.session.SessionManagementFilter@503a7990, org.springframework.security.web.access.ExceptionTranslationFilter@6996bbc4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@797f97e3]
+2023-04-25 15:53:26 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-25 15:53:26 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-25 15:53:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2023-04-25 15:53:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-25 15:53:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-25 15:53:27 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 6.268 seconds (JVM running for 6.781)
+2023-04-25 15:54:23 [http-nio-8183-exec-4] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25 15:54:23 [http-nio-8183-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-25 15:54:23 [http-nio-8183-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-25 15:54:23 [http-nio-8183-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-04-25 15:54:23 [http-nio-8183-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-04-25 15:54:23 [http-nio-8183-exec-4] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [192] milliseconds.
+2023-04-25 15:54:23 [http-nio-8183-exec-4] INFO  c.m.d.e.q.s.b.i.TwitterElasticQueryService - Querying all documents in elasticsearch
+2023-04-25 15:54:23 [http-nio-8183-exec-4] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/twitter-index/_search?typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:54:23 [http-nio-8183-exec-4] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/twitter-index/_search?typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:54:24 [http-nio-8183-exec-4] INFO  c.m.d.e.q.c.s.i.TwitterElasticsearchQueryClient - 787 number of documents retrieved successfully
+2023-04-25 15:54:24 [http-nio-8183-exec-4] INFO  c.m.d.e.q.s.a.ElasticDocumentController - Elasticsearch returned 787 of documents
+2023-04-25 15:54:36 [http-nio-8183-exec-7] INFO  c.m.d.e.q.s.b.i.TwitterElasticQueryService - Querying elasticsearch by id: 899497601226173342
+2023-04-25 15:54:36 [http-nio-8183-exec-7] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/twitter-index/_doc/899497601226173342] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:54:36 [http-nio-8183-exec-7] INFO  c.m.d.e.q.c.s.i.TwitterElasticsearchQueryClient - Document with id 899497601226173342 retrieved successfully
+2023-04-25 15:54:36 [http-nio-8183-exec-7] INFO  c.m.d.e.q.s.a.ElasticDocumentController - Elasticsearch returned document with id 899497601226173342
+2023-04-25 15:54:43 [http-nio-8183-exec-10] INFO  c.m.d.e.q.s.b.i.TwitterElasticQueryService - Querying elasticsearch by id: 8994976012261733421
+2023-04-25 15:54:43 [http-nio-8183-exec-10] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/twitter-index/_doc/8994976012261733421] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-25 15:54:43 [http-nio-8183-exec-10] ERROR c.m.d.e.q.s.a.e.h.ElasticQueryServiceErrorHandler - Service runtime exception!
+com.microservices.demo.elastic.query.client.exception.ElasticQueryClientException: No document found at elasticsearch with id 8994976012261733421
+	at com.microservices.demo.elastic.query.client.service.impl.TwitterElasticsearchQueryClient.lambda$getIndexModelById$0(TwitterElasticsearchQueryClient.java:30)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+	at com.microservices.demo.elastic.query.client.service.impl.TwitterElasticsearchQueryClient.getIndexModelById(TwitterElasticsearchQueryClient.java:30)
+	at com.microservices.demo.elastic.query.client.service.impl.TwitterElasticsearchQueryClient.getIndexModelById(TwitterElasticsearchQueryClient.java:16)
+	at com.microservices.demo.elastic.query.service.business.impl.TwitterElasticQueryService.getDocumentById(TwitterElasticQueryService.java:27)
+	at com.microservices.demo.elastic.query.service.api.ElasticDocumentController.getDocumentById(ElasticDocumentController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:204)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-04-25 17:11:35 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-25 17:11:35 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
