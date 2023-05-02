@@ -1,0 +1,799 @@
+2023-04-27 14:18:11 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://config-server:8888
+2023-04-27 14:18:11 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://config-server:8888
+2023-04-27 14:18:12 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=f3aada7f0233b0836c4c26bf115a5d85a86b2198, state=null
+2023-04-27 14:18:12 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=f3aada7f0233b0836c4c26bf115a5d85a86b2198, state=null
+2023-04-27 14:18:12 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client.yml'}]
+2023-04-27 14:18:12 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/software-dev2010/spring-cloud-config-server-repository/config-client.yml'}]
+2023-04-27 14:18:12 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 186ms. Found 2 Elasticsearch repository interfaces.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 186ms. Found 2 Elasticsearch repository interfaces.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-27 14:18:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-27 14:18:13 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7db458f7-3c93-3f1b-b024-8cf3ebd4eacd
+2023-04-27 14:18:13 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7db458f7-3c93-3f1b-b024-8cf3ebd4eacd
+2023-04-27 14:18:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$63c2ee93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-27 14:18:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$63c2ee93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-27 14:18:13 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-04-27 14:18:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-04-27 14:18:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-04-27 14:18:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1682605093968
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2023-04-27 14:18:14 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.2
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.2
+2023-04-27 14:18:14 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.13.2
+2023-04-27 14:18:14 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.13.2
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.2
+2023-04-27 14:18:14 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.2
+2023-04-27 14:18:14 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:14 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:15 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f36ac10b-862f-45d0-b190-9e557d4e8a97
+
+2023-04-27 14:18:15 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f36ac10b-862f-45d0-b190-9e557d4e8a97
+
+2023-04-27 14:18:15 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2023-04-27 14:18:15 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2023-04-27 14:18:15 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 5.162 seconds (JVM running for 5.855)
+2023-04-27 14:18:15 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2023-04-27 14:18:15 [main] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Topics with name twitter-topic is ready for operations!
+2023-04-27 14:18:15 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2023-04-27 14:18:15 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-04-27 14:18:15 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-04-27 14:18:15 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-04-27 14:18:15 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1682605095965
+2023-04-27 14:18:15 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2023-04-27 14:18:15 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-04-27 14:18:15 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-04-27 14:18:15 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2023-04-27 14:18:15 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-04-27 14:18:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-04-27 14:18:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-04-27 14:18:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1682605096002
+2023-04-27 14:18:16 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2023-04-27 14:18:16 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-04-27 14:18:16 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-04-27 14:18:16 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2023-04-27 14:18:16 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-04-27 14:18:16 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Cluster ID: G3Vf9bpxQjKludiS-_KEfw
+2023-04-27 14:18:16 [twitter-topic-consumer-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Cluster ID: G3Vf9bpxQjKludiS-_KEfw
+2023-04-27 14:18:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-04-27 14:18:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-04-27 14:18:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1682605096035
+2023-04-27 14:18:16 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2023-04-27 14:18:16 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-04-27 14:18:16 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2023-04-27 14:18:16 [twitter-topic-consumer-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Cluster ID: G3Vf9bpxQjKludiS-_KEfw
+2023-04-27 14:18:17 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-2:9092 (id: 2147483645 rack: null)
+2023-04-27 14:18:17 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] (Re-)joining group
+2023-04-27 14:18:17 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-2:9092 (id: 2147483645 rack: null)
+2023-04-27 14:18:17 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] (Re-)joining group
+2023-04-27 14:18:17 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Discovered group coordinator kafka-broker-2:9092 (id: 2147483645 rack: null)
+2023-04-27 14:18:17 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] (Re-)joining group
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Finished assignment for group at generation 1: {consumer-twitter-topic-consumer-2-59d53e4d-2ba8-4695-ace3-98b89372c7f1=Assignment(partitions=[twitter-topic-1]), consumer-twitter-topic-consumer-1-429e4600-362a-4a9e-8802-4840a3799f3f=Assignment(partitions=[twitter-topic-0]), consumer-twitter-topic-consumer-3-d1282695-d3e3-4903-9644-8fbeb0056616=Assignment(partitions=[twitter-topic-2])}
+2023-04-27 14:18:23 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Successfully joined group with generation 1
+2023-04-27 14:18:23 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Successfully joined group with generation 1
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Successfully joined group with generation 1
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-0
+2023-04-27 14:18:23 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-2
+2023-04-27 14:18:23 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-1
+2023-04-27 14:18:23 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-1
+2023-04-27 14:18:23 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-2
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-0
+2023-04-27 14:18:23 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-2 to offset 0.
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-0 to offset 0.
+2023-04-27 14:18:23 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-2]
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-0]
+2023-04-27 14:18:23 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-2]
+2023-04-27 14:18:23 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-0]
+2023-04-27 14:18:23 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-1 to offset 0.
+2023-04-27 14:18:23 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-1]
+2023-04-27 14:18:23 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-1]
+2023-04-27 14:18:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3120864759350543468], partitions [0] and offsets [0], sending it to elastic: Thread id 51
+2023-04-27 14:18:24 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8647007891099765068], partitions [1] and offsets [0], sending it to elastic: Thread id 53
+2023-04-27 14:18:24 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:24 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:24 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6912635260068778715]
+2023-04-27 14:18:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8536488740973077421]
+2023-04-27 14:18:24 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6912635260068778715
+2023-04-27 14:18:24 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8536488740973077421
+2023-04-27 14:18:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [227118727957181952], partitions [2] and offsets [0], sending it to elastic: Thread id 55
+2023-04-27 14:18:29 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8596080180252295631]
+2023-04-27 14:18:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8596080180252295631
+2023-04-27 14:18:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5431050706994897078], partitions [0] and offsets [1], sending it to elastic: Thread id 51
+2023-04-27 14:18:39 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6622774061635089463]
+2023-04-27 14:18:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6622774061635089463
+2023-04-27 14:18:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8208027924097274226], partitions [2] and offsets [1], sending it to elastic: Thread id 55
+2023-04-27 14:18:49 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6241875616834572422]
+2023-04-27 14:18:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6241875616834572422
+2023-04-27 14:18:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4679757252221092980], partitions [1] and offsets [1], sending it to elastic: Thread id 53
+2023-04-27 14:18:59 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:18:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6443201971702505986]
+2023-04-27 14:18:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6443201971702505986
+2023-04-27 14:19:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4797843838530289014], partitions [2] and offsets [2], sending it to elastic: Thread id 55
+2023-04-27 14:19:09 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:19:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1306370540746074494]
+2023-04-27 14:19:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1306370540746074494
+2023-04-27 14:19:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1387271540147101729], partitions [0] and offsets [2], sending it to elastic: Thread id 51
+2023-04-27 14:19:19 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:19:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7250971597663820988]
+2023-04-27 14:19:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7250971597663820988
+2023-04-27 14:19:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [508474000699613902], partitions [0] and offsets [3], sending it to elastic: Thread id 51
+2023-04-27 14:19:29 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:19:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1493607313452297046]
+2023-04-27 14:19:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1493607313452297046
+2023-04-27 14:19:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2568081086229770197], partitions [2] and offsets [3], sending it to elastic: Thread id 55
+2023-04-27 14:19:39 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:19:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2975647103206375732]
+2023-04-27 14:19:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2975647103206375732
+2023-04-27 14:19:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1437005171658323703], partitions [1] and offsets [2], sending it to elastic: Thread id 53
+2023-04-27 14:19:49 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:19:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4012267070832974151]
+2023-04-27 14:19:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4012267070832974151
+2023-04-27 14:19:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5809373936860628088], partitions [1] and offsets [3], sending it to elastic: Thread id 53
+2023-04-27 14:19:59 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:19:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2239880316904406520]
+2023-04-27 14:19:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2239880316904406520
+2023-04-27 14:20:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8614956808624196417], partitions [1] and offsets [4], sending it to elastic: Thread id 53
+2023-04-27 14:20:09 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:20:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [932844833300003254]
+2023-04-27 14:20:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 932844833300003254
+2023-04-27 14:20:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2991288696662437885], partitions [0] and offsets [4], sending it to elastic: Thread id 51
+2023-04-27 14:20:19 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:20:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5939075876882604485]
+2023-04-27 14:20:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5939075876882604485
+2023-04-27 14:20:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [921423505689347870], partitions [2] and offsets [4], sending it to elastic: Thread id 55
+2023-04-27 14:20:29 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:20:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1982758989904996553]
+2023-04-27 14:20:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1982758989904996553
+2023-04-27 14:20:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7553053284839305663], partitions [1] and offsets [5], sending it to elastic: Thread id 53
+2023-04-27 14:20:39 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:20:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6412582186346796565]
+2023-04-27 14:20:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6412582186346796565
+2023-04-27 14:20:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3336811180400185006], partitions [2] and offsets [5], sending it to elastic: Thread id 55
+2023-04-27 14:20:49 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:20:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7675873590314241881]
+2023-04-27 14:20:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7675873590314241881
+2023-04-27 14:20:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4082248050774885435], partitions [2] and offsets [6], sending it to elastic: Thread id 55
+2023-04-27 14:20:59 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:20:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8729637701538221420]
+2023-04-27 14:20:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8729637701538221420
+2023-04-27 14:21:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5634524573413321128], partitions [0] and offsets [5], sending it to elastic: Thread id 51
+2023-04-27 14:21:09 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:21:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [322774679295168453]
+2023-04-27 14:21:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 322774679295168453
+2023-04-27 14:21:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2310827947471559943], partitions [2] and offsets [7], sending it to elastic: Thread id 55
+2023-04-27 14:21:19 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:21:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1676791245333063825]
+2023-04-27 14:21:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1676791245333063825
+2023-04-27 14:21:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4297471969106823940], partitions [0] and offsets [6], sending it to elastic: Thread id 51
+2023-04-27 14:21:29 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:21:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3607063491758876925]
+2023-04-27 14:21:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3607063491758876925
+2023-04-27 14:21:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1016012003795810880], partitions [1] and offsets [6], sending it to elastic: Thread id 53
+2023-04-27 14:21:39 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:21:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2749057001238382405]
+2023-04-27 14:21:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2749057001238382405
+2023-04-27 14:21:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3631567308625348653], partitions [1] and offsets [7], sending it to elastic: Thread id 53
+2023-04-27 14:21:49 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:21:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4246868904871736793]
+2023-04-27 14:21:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4246868904871736793
+2023-04-27 14:21:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4908489449089695051], partitions [0] and offsets [7], sending it to elastic: Thread id 51
+2023-04-27 14:21:59 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:21:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4149347072356892243]
+2023-04-27 14:21:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4149347072356892243
+2023-04-27 14:22:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1071001432621886320], partitions [2] and offsets [8], sending it to elastic: Thread id 55
+2023-04-27 14:22:09 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:22:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5441604869701845673]
+2023-04-27 14:22:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5441604869701845673
+2023-04-27 14:22:19 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7568228446382103184], partitions [1] and offsets [8], sending it to elastic: Thread id 53
+2023-04-27 14:22:19 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:22:19 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [9159549705396327889]
+2023-04-27 14:22:19 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 9159549705396327889
+2023-04-27 14:22:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5246768287523087246], partitions [0] and offsets [8], sending it to elastic: Thread id 51
+2023-04-27 14:22:29 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:22:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7417511910555233295]
+2023-04-27 14:22:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7417511910555233295
+2023-04-27 14:22:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1593719748049130490], partitions [1] and offsets [9], sending it to elastic: Thread id 53
+2023-04-27 14:22:39 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:22:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7713741107272859171]
+2023-04-27 14:22:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7713741107272859171
+2023-04-27 14:22:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [135582744945368819], partitions [1] and offsets [10], sending it to elastic: Thread id 53
+2023-04-27 14:22:49 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:22:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2980929572472902425]
+2023-04-27 14:22:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2980929572472902425
+2023-04-27 14:22:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7035902935036315588], partitions [0] and offsets [9], sending it to elastic: Thread id 51
+2023-04-27 14:22:59 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:22:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [358152714064969567]
+2023-04-27 14:22:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 358152714064969567
+2023-04-27 14:23:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7107760434157251469], partitions [0] and offsets [10], sending it to elastic: Thread id 51
+2023-04-27 14:23:09 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:23:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5683504905959152978]
+2023-04-27 14:23:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5683504905959152978
+2023-04-27 14:23:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2060261428466477097], partitions [2] and offsets [9], sending it to elastic: Thread id 55
+2023-04-27 14:23:19 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:23:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3497147187077969309]
+2023-04-27 14:23:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3497147187077969309
+2023-04-27 14:23:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1971382955566685087], partitions [0] and offsets [11], sending it to elastic: Thread id 51
+2023-04-27 14:23:29 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:23:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4247309445732959966]
+2023-04-27 14:23:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4247309445732959966
+2023-04-27 14:23:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [232714167088256598], partitions [1] and offsets [11], sending it to elastic: Thread id 53
+2023-04-27 14:23:39 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:23:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1058999434642661606]
+2023-04-27 14:23:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1058999434642661606
+2023-04-27 14:23:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4615711904514948759], partitions [2] and offsets [10], sending it to elastic: Thread id 55
+2023-04-27 14:23:49 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:23:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [310693352467125345]
+2023-04-27 14:23:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 310693352467125345
+2023-04-27 14:23:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3337262737835942675], partitions [0] and offsets [12], sending it to elastic: Thread id 51
+2023-04-27 14:23:59 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:23:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [955616350738991105]
+2023-04-27 14:23:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 955616350738991105
+2023-04-27 14:24:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8401815194777763224], partitions [1] and offsets [12], sending it to elastic: Thread id 53
+2023-04-27 14:24:09 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:24:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7274491977001518795]
+2023-04-27 14:24:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7274491977001518795
+2023-04-27 14:24:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [682510660551757787], partitions [0] and offsets [13], sending it to elastic: Thread id 51
+2023-04-27 14:24:19 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:24:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4165873248532370973]
+2023-04-27 14:24:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4165873248532370973
+2023-04-27 14:24:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8488145022313419528], partitions [2] and offsets [11], sending it to elastic: Thread id 55
+2023-04-27 14:24:29 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:24:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [619366069490663156]
+2023-04-27 14:24:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 619366069490663156
+2023-04-27 14:24:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5514789214272749304], partitions [1] and offsets [13], sending it to elastic: Thread id 53
+2023-04-27 14:24:39 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:24:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1075017692933139667]
+2023-04-27 14:24:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1075017692933139667
+2023-04-27 14:24:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1110205943418455420], partitions [0] and offsets [14], sending it to elastic: Thread id 51
+2023-04-27 14:24:49 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:24:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8649298909018086399]
+2023-04-27 14:24:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8649298909018086399
+2023-04-27 14:24:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8399583660193246036], partitions [0] and offsets [15], sending it to elastic: Thread id 51
+2023-04-27 14:24:59 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:24:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4791458306977926262]
+2023-04-27 14:24:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4791458306977926262
+2023-04-27 14:25:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1289766729046493301], partitions [0] and offsets [16], sending it to elastic: Thread id 51
+2023-04-27 14:25:09 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:25:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6888702334520408483]
+2023-04-27 14:25:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6888702334520408483
+2023-04-27 14:25:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2199871482891402421], partitions [2] and offsets [12], sending it to elastic: Thread id 55
+2023-04-27 14:25:19 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:25:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6925480906280744593]
+2023-04-27 14:25:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6925480906280744593
+2023-04-27 14:25:29 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [6553493734852208325], partitions [1] and offsets [14], sending it to elastic: Thread id 53
+2023-04-27 14:25:29 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:25:29 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8020725870473922821]
+2023-04-27 14:25:29 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8020725870473922821
+2023-04-27 14:25:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [617682492458336961], partitions [0] and offsets [17], sending it to elastic: Thread id 51
+2023-04-27 14:25:39 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:25:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8878264781919583591]
+2023-04-27 14:25:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8878264781919583591
+2023-04-27 14:25:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [6207376875462510294], partitions [0] and offsets [18], sending it to elastic: Thread id 51
+2023-04-27 14:25:49 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:25:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5473475219230971109]
+2023-04-27 14:25:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5473475219230971109
+2023-04-27 14:25:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3893297808971657876], partitions [2] and offsets [13], sending it to elastic: Thread id 55
+2023-04-27 14:25:59 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:25:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [9038108193956733360]
+2023-04-27 14:25:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 9038108193956733360
+2023-04-27 14:26:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7898744765634350508], partitions [0] and offsets [19], sending it to elastic: Thread id 51
+2023-04-27 14:26:09 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:26:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6651823687366623763]
+2023-04-27 14:26:09 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6651823687366623763
+2023-04-27 14:26:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7420591524703337739], partitions [0] and offsets [20], sending it to elastic: Thread id 51
+2023-04-27 14:26:19 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:26:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5520072909501377586]
+2023-04-27 14:26:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5520072909501377586
+2023-04-27 14:26:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [6543869157138753563], partitions [0] and offsets [21], sending it to elastic: Thread id 51
+2023-04-27 14:26:29 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:26:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4912850649057509636]
+2023-04-27 14:26:29 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4912850649057509636
+2023-04-27 14:26:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5284079606533119132], partitions [2] and offsets [14], sending it to elastic: Thread id 55
+2023-04-27 14:26:39 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:26:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5204546511250924057]
+2023-04-27 14:26:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5204546511250924057
+2023-04-27 14:26:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4169243261726906085], partitions [0] and offsets [22], sending it to elastic: Thread id 51
+2023-04-27 14:26:49 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:26:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3125422334204260945]
+2023-04-27 14:26:49 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3125422334204260945
+2023-04-27 14:26:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5155981000494930208], partitions [1] and offsets [15], sending it to elastic: Thread id 53
+2023-04-27 14:26:59 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:26:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8123004186574794762]
+2023-04-27 14:26:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8123004186574794762
+2023-04-27 14:27:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [6018032555890913372], partitions [1] and offsets [16], sending it to elastic: Thread id 53
+2023-04-27 14:27:09 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:27:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5859663263804735908]
+2023-04-27 14:27:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5859663263804735908
+2023-04-27 14:27:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1420980859460565872], partitions [2] and offsets [15], sending it to elastic: Thread id 55
+2023-04-27 14:27:19 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:27:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1971392005468000905]
+2023-04-27 14:27:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1971392005468000905
+2023-04-27 14:27:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8334174828218209465], partitions [2] and offsets [16], sending it to elastic: Thread id 55
+2023-04-27 14:27:29 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:27:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7684355891217368423]
+2023-04-27 14:27:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7684355891217368423
+2023-04-27 14:27:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [6217190442225349060], partitions [0] and offsets [23], sending it to elastic: Thread id 51
+2023-04-27 14:27:39 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:27:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3565783493798420598]
+2023-04-27 14:27:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3565783493798420598
+2023-04-27 14:27:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8314707935500979954], partitions [1] and offsets [17], sending it to elastic: Thread id 53
+2023-04-27 14:27:49 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:27:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3396699743997168858]
+2023-04-27 14:27:49 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3396699743997168858
+2023-04-27 14:27:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1579309544949920329], partitions [0] and offsets [24], sending it to elastic: Thread id 51
+2023-04-27 14:27:59 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:27:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6221153045867411747]
+2023-04-27 14:27:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6221153045867411747
+2023-04-27 14:28:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7943475188012114330], partitions [1] and offsets [18], sending it to elastic: Thread id 53
+2023-04-27 14:28:09 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:28:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5409940532333468220]
+2023-04-27 14:28:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5409940532333468220
+2023-04-27 14:28:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3207239450647247993], partitions [2] and offsets [17], sending it to elastic: Thread id 55
+2023-04-27 14:28:19 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:28:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4827396293321166741]
+2023-04-27 14:28:19 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4827396293321166741
+2023-04-27 14:28:29 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1484931183266570676], partitions [1] and offsets [19], sending it to elastic: Thread id 53
+2023-04-27 14:28:29 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:28:29 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8612704426246903169]
+2023-04-27 14:28:29 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8612704426246903169
+2023-04-27 14:28:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7979960105713699974], partitions [2] and offsets [18], sending it to elastic: Thread id 55
+2023-04-27 14:28:39 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:28:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3928427834040194741]
+2023-04-27 14:28:39 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3928427834040194741
+2023-04-27 14:28:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3918533177591319902], partitions [2] and offsets [19], sending it to elastic: Thread id 55
+2023-04-27 14:28:49 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:28:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [4027427194067802750]
+2023-04-27 14:28:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 4027427194067802750
+2023-04-27 14:28:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1671276805304824186], partitions [1] and offsets [20], sending it to elastic: Thread id 53
+2023-04-27 14:28:59 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:28:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2535685882536291563]
+2023-04-27 14:28:59 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2535685882536291563
+2023-04-27 14:29:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3027956262988553250], partitions [1] and offsets [21], sending it to elastic: Thread id 53
+2023-04-27 14:29:09 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:29:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2049490787718096308]
+2023-04-27 14:29:09 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2049490787718096308
+2023-04-27 14:29:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8940321722784001850], partitions [0] and offsets [25], sending it to elastic: Thread id 51
+2023-04-27 14:29:19 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:29:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5944811401933133810]
+2023-04-27 14:29:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5944811401933133810
+2023-04-27 14:29:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1248522039113641865], partitions [2] and offsets [20], sending it to elastic: Thread id 55
+2023-04-27 14:29:29 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:29:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6951495395935443465]
+2023-04-27 14:29:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6951495395935443465
+2023-04-27 14:29:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5109300460543457758], partitions [0] and offsets [26], sending it to elastic: Thread id 51
+2023-04-27 14:29:39 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:29:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2046011661484026456]
+2023-04-27 14:29:39 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2046011661484026456
+2023-04-27 14:29:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3665401354023514869], partitions [2] and offsets [21], sending it to elastic: Thread id 55
+2023-04-27 14:29:49 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:29:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [994061175393818727]
+2023-04-27 14:29:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 994061175393818727
+2023-04-27 14:29:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5138720701668979438], partitions [2] and offsets [22], sending it to elastic: Thread id 55
+2023-04-27 14:29:59 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:29:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3116826407659151472]
+2023-04-27 14:29:59 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3116826407659151472
+2023-04-27 14:30:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3745480896500569673], partitions [2] and offsets [23], sending it to elastic: Thread id 55
+2023-04-27 14:30:09 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:30:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1066765647772479184]
+2023-04-27 14:30:09 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1066765647772479184
+2023-04-27 14:30:19 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2747950785176858384], partitions [0] and offsets [27], sending it to elastic: Thread id 51
+2023-04-27 14:30:20 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:30:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [9010848188312234031]
+2023-04-27 14:30:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 9010848188312234031
+2023-04-27 14:30:29 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5132914546775228765], partitions [2] and offsets [24], sending it to elastic: Thread id 55
+2023-04-27 14:30:30 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:30:30 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8119842475863334139]
+2023-04-27 14:30:30 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8119842475863334139
+2023-04-27 14:30:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3768367546706888913], partitions [1] and offsets [22], sending it to elastic: Thread id 53
+2023-04-27 14:30:39 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:30:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5225954155428411136]
+2023-04-27 14:30:39 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5225954155428411136
+2023-04-27 14:30:49 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8107496091005063229], partitions [2] and offsets [25], sending it to elastic: Thread id 55
+2023-04-27 14:30:50 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:30:50 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1598192152787854624]
+2023-04-27 14:30:50 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1598192152787854624
+2023-04-27 14:30:59 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [9090917526139620669], partitions [0] and offsets [28], sending it to elastic: Thread id 51
+2023-04-27 14:31:00 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:31:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7997692003936862197]
+2023-04-27 14:31:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7997692003936862197
+2023-04-27 14:31:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8984240331843384478], partitions [0] and offsets [29], sending it to elastic: Thread id 51
+2023-04-27 14:31:10 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:31:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7803700650104662763]
+2023-04-27 14:31:10 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7803700650104662763
+2023-04-27 14:31:20 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1970740035373468422], partitions [2] and offsets [26], sending it to elastic: Thread id 55
+2023-04-27 14:31:20 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:31:20 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7040612008104811898]
+2023-04-27 14:31:20 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7040612008104811898
+2023-04-27 14:31:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5858057835294157880], partitions [1] and offsets [23], sending it to elastic: Thread id 53
+2023-04-27 14:31:30 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:31:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6062707946143795026]
+2023-04-27 14:31:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6062707946143795026
+2023-04-27 14:31:40 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4254550642788260667], partitions [2] and offsets [27], sending it to elastic: Thread id 55
+2023-04-27 14:31:40 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:31:40 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [3336096218588189533]
+2023-04-27 14:31:40 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 3336096218588189533
+2023-04-27 14:31:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5481054756204225341], partitions [0] and offsets [30], sending it to elastic: Thread id 51
+2023-04-27 14:31:50 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:31:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [7750485477945542498]
+2023-04-27 14:31:50 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 7750485477945542498
+2023-04-27 14:32:00 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [452093764670937141], partitions [1] and offsets [24], sending it to elastic: Thread id 53
+2023-04-27 14:32:00 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:32:00 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [8577636883717279134]
+2023-04-27 14:32:00 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 8577636883717279134
+2023-04-27 14:32:10 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8120416711819966563], partitions [2] and offsets [28], sending it to elastic: Thread id 55
+2023-04-27 14:32:10 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:32:10 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6850504367948818673]
+2023-04-27 14:32:10 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6850504367948818673
+2023-04-27 14:32:20 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3277517001275201178], partitions [2] and offsets [29], sending it to elastic: Thread id 55
+2023-04-27 14:32:20 [twitter-topic-consumer-2-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:32:20 [twitter-topic-consumer-2-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [5760958339894247356]
+2023-04-27 14:32:20 [twitter-topic-consumer-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 5760958339894247356
+2023-04-27 14:32:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7584972429130038835], partitions [1] and offsets [25], sending it to elastic: Thread id 53
+2023-04-27 14:32:30 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:32:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [547800713322731646]
+2023-04-27 14:32:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 547800713322731646
+2023-04-27 14:32:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2714921009337933178], partitions [0] and offsets [31], sending it to elastic: Thread id 51
+2023-04-27 14:32:40 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:32:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [522564333363469795]
+2023-04-27 14:32:40 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 522564333363469795
+2023-04-27 14:32:50 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1137216928353344568], partitions [1] and offsets [26], sending it to elastic: Thread id 53
+2023-04-27 14:32:50 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:32:50 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6557514353387450085]
+2023-04-27 14:32:50 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6557514353387450085
+2023-04-27 14:33:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7068072345649185778], partitions [0] and offsets [32], sending it to elastic: Thread id 51
+2023-04-27 14:33:00 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:33:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [2211157707501201980]
+2023-04-27 14:33:00 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 2211157707501201980
+2023-04-27 14:33:10 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7026166888261129940], partitions [1] and offsets [27], sending it to elastic: Thread id 53
+2023-04-27 14:33:10 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:33:10 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [664176237797571148]
+2023-04-27 14:33:10 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 664176237797571148
+2023-04-27 14:33:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2354256196407233010], partitions [0] and offsets [33], sending it to elastic: Thread id 51
+2023-04-27 14:33:20 [twitter-topic-consumer-0-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:33:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [6166424928139877692]
+2023-04-27 14:33:20 [twitter-topic-consumer-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 6166424928139877692
+2023-04-27 14:33:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1452613451553870726], partitions [1] and offsets [28], sending it to elastic: Thread id 53
+2023-04-27 14:33:30 [twitter-topic-consumer-1-C-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/_bulk?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2023-04-27 14:33:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.e.i.c.s.i.TwitterElasticIndexClient - Documents indexed successfully with type: com.microservices.demo.elastic.model.index.impl.TwitterIndexModel and ids: [1446640603416595264]
+2023-04-27 14:33:30 [twitter-topic-consumer-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Documents saved to elasticsearch with ids 1446640603416595264
